@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-if _name_ == "_main_":
+if __name_ == "__main_":
 
     import hidden_4
 
