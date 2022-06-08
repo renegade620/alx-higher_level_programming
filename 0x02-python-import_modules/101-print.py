@@ -1,2 +1,2 @@
 #!/usr/bin/python3
-import print.py
+__import__ ('print")
