@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 import sys
 
-if _name_ == "_main_":
+if __name__ == "__main__":
 
     total = 0
 
