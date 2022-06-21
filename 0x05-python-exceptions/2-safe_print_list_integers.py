@@ -1,13 +1,15 @@
 #!/usr/bin/python3
 def safe_print_list_integers(my_list=[], x=0):
     n = 0
+    counter = 0
     
-    for i in range(0, x):
+    while n < x:
         try:
             print("{:d}".format(my_list[i], end=''))
-            n += 1
         except (TypeError, ValueError):
             continue
+         else:
+            counter += 1
         finally:
             i += 1
     print()
