@@ -9,7 +9,8 @@ class Square:
         """
         init square.
 
-        Args: size - size of square
+        Args:
+             size: size of square
 
         """
         if type(size) is not int:
