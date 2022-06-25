@@ -54,3 +54,8 @@ class Square:
                        2 positive integers")
         else:
             self.__position = value
+
+    @property
+    def position(self):
+        """ getter for __position """
+        return self.__position
