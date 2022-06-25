@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-"""Printing a square """
+""" Printing a square """
 
 
 class Square:
-    """defines a square """
+    """ defines a square """
     def __init__(self, size=0, position=(0, 0)):
         """ init square
 
