@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Printing square """
+"""Printing a square """
 
 
 class Square:
