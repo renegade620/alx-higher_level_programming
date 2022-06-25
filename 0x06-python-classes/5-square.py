@@ -5,11 +5,11 @@
 class Square:
     """
     defines a square
-   
+
     """
     def __init__(self, size=0, position=(0, 0)):
         """init
-        
+
        Args:
         size: square size
         position: square position
@@ -46,7 +46,7 @@ class Square:
             print()
         for j in range(self.__size):
             print("".join([" " for k in range(self.__position[0])]), end="")
-            print("".join(["#" for l in range(self.__size)]))
+            print("".join(["#" for x in range(self.__size)]))
 
     @property
     def position(self):
