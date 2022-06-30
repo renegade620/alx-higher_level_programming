@@ -27,7 +27,7 @@ class Rectangle:
             if value < 0:
                 raise ValueError("width must be >= 0")
             else:
-                self._width = value
+                self.__width = value
 
     @property
     def height(self):
@@ -42,13 +42,13 @@ class Rectangle:
             if value < 0:
                 raise ValueError("height must be >= 0")
             else:
-                self._height = value
+                self.__height = value
 
     @def area(self):
         """ rectangle area """
         return self.__width * self.__height
 
-    @def perimeter:
+    @def perimeter(self):
         """ rectangle perimeter """
         if self.__width == 0 or self.__height == 0:
             return 0
@@ -63,4 +63,4 @@ class Rectangle:
             [rect.append("#") for j in range(self.__width)]
             if i != self.__height - 1:
                 rect.append("\n")
-    return("".joi(rect))
+    return("".join(rect))
