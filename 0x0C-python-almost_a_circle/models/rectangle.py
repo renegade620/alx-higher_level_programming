@@ -82,7 +82,8 @@ class Rectangle(Base):
     def __str__(self):
         """ string rep of rectangle class """
         return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x,
-                self.width, self.height)
+                                                       self.width,
+                                                       self.height)
 
     def update(self, *args, **kwargs):
         """ rectangle update """
@@ -123,9 +124,9 @@ class Rectangle(Base):
     def to_dictionary(self):
         """ return dict rep """
         return {
-        "id": self.id,
-        "width": self.width,
-        "height": self.height,
-        "x": self.x,
-        "y" : self.y
-        }
+                "id": self.id,
+                "width": self.width,
+                "height": self.height,
+                "x": self.x,
+                "y": self.y
+                }
