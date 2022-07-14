@@ -4,10 +4,10 @@ from models.base import Base
 
 
 class Rectangle(Base):
-    """ class recttangle inherits from class base """
+    """ class rectangle inherits from class base """
+    
     def __init__(self, width, height, x=0, y=0, id=None):
         """ init a rectangle """
-
         self.width = width
         self.height = height
         self.x = x
