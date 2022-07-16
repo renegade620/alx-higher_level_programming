@@ -69,3 +69,21 @@ class Base:
                 list_d.append(cls.create(**i))
             return list_d
         return []
+
+     @staticmethod
+    def draw(list_rectangles, list_squares):
+        """draws rectangles and squares"""
+        for i in list_rectangles + list_squares:
+            t = turtle.Turtle()
+            t.shape("turtle")
+            turtle.bgcolor("black")
+            t.fillcolor("white")
+            t.begin_fill()
+            t.pen(fillcolor="white", pencolor="red", pensize=2)
+            for _ in range(2):
+                t.forward(i.width)
+                t.right(90)
+                t.forward(i.height)
+                t.right(90)
+            t.end_fill()
+            turtle.done()
